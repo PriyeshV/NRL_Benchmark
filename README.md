@@ -72,6 +72,24 @@ python link_prediction.py --input_graph_dir ppi_80_20 --file_name fold --dataset
 ```
 
 ## Link Prediction Heuristics
+```
+Example usage:
+
+Assuming the splitted files are in the following organization:
+|--> pubmed_80_20
+    |->fold_0.mat
+    |->fold_1.mat
+    |->fold_2.mat
+    |->fold_3.mat
+    |->fold_4.mat
+
+python link_prediction_heuristics.py --input_graph pubmed_80_20/ --dataset pubmed --num_folds 5
+
+For larger datasets (> 5M edges) like Flickr, Youtube - We sample 10% of edges using '--percent edges' flag.
+
+python link_prediction_heuristics.py --input_graph flickr_80_20/ --dataset flickr --num_folds 5 --percent_edges 10   
+```
+
 
 ## Node Classification
 
