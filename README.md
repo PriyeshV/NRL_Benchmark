@@ -5,7 +5,7 @@ This repository provides evaluation scripts and datasets with train/test splits 
 ## Link Prediction
 
 ### Pre-created LP splits
-[Here](https://pip.pypa.io/en/stable/) is the link to the link prediction splits used in the paper.
+[Here](https://app.box.com/s/idz6xv8l4mlivtgmyw0sd85l2jhi0pji) is the link to the link prediction splits used in the paper.
 
 ### Create your own LP split
 ```
