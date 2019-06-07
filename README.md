@@ -96,6 +96,9 @@ python link_prediction_heuristics.py --input_graph flickr_80_20/ --dataset flick
 
 ## Node Classification Heuristics
 
+## Requirements
+environment.yml contains the necessary virtualenv requirements for running all the scripts in the repository. 
+
 ## Citing
 If you find our paper or the code relevant and useful for your research, we request you to cite our paper
 ```
