@@ -71,3 +71,9 @@ python link_prediction.py --input_graph_dir ppi_80_20 --file_name fold --dataset
 --share_embeddings --num_folds 5 --emb_size 128 --algorithm deepwalk --embedding_params '{"num_walks" :40, "walk_length" : 80,"window" : 10}'   
 ```
 
+## Link Prediction Heuristics
+
+## Node Classification
+
+## Node Classification Heuristics
+
