@@ -169,6 +169,30 @@ python classification.py --classifier SVM --test_kernel rbf --emb ../emb/blogcat
 ```
 ## Node Classification Heuristics
 
+### Node Heuristics feature generation
+```
+node_heuristics.py is used to generate node huerisitc features.
+Using this as a stand alone module/script:
+1) Can be called from command line with the following arugments:
+    # Required arguments (must be given in the correct order):
+    "--edgelist", type=string, required=True, help='The path and name of the edgelist file with no weights containing the edgelist of the input network'
+    "--network", type=string, required=True, help='The path and name of the .mat file containing the adjacency matrix and node labels of the input network'
+    "--dataset", type=string,required=True, help='The name of your dataset (used for output)'
+    # Optional arguments
+    "--adj_matrix_name", default='network', help='The name of the adjacency matrix inside the .mat file'
+    "--label_matrix_name", default='group', help='The name of the labels matrix inside the .mat file'
+Example for LR classification:
+python node_heuristics.py --network ../blogcatalog.mat --edgelist ../blogcatalog.edgelisht --dataset blogcatalog --adj_matrix_name network --label_matrix_name group
+```
+
+### Node Heuristics Evaluation
+```
+node_heuristics_classification.py is a modification of the classification script used to conduct the node classification experiments.
+node_heuristics_classification.py reads in the node heurisitcs and evaluates them in a similar manner to the classification script. 
+A couple of key differences include:
+	- Input: We require the heuristics .csv file (generated from 'Node Heuristics feature generation' step, using node_heuristics.py)
+	- Normalization: We do NOT conducted any l2 normalization, instead we use Scikit Learn's RobustScaler to perform columwise normalization
+```
 ## Requirements
 environment.yml contains the necessary virtualenv requirements for running all the scripts in the repository. 
 
