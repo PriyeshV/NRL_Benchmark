@@ -93,6 +93,7 @@ python link_prediction_heuristics.py --input_graph flickr_80_20/ --dataset flick
 
 
 ## Node Classification
+[Here](https://app.box.com/s/wbj3zafd61ymp2uechr4oh6jsu6n7nry) is the link to the node classification datasets.
 ```
 There are two ways of using node classification script:
 1) As an import
