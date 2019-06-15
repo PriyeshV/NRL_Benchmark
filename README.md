@@ -93,7 +93,7 @@ python link_prediction_heuristics.py --input_graph flickr_80_20/ --dataset flick
 
 
 ## Node Classification
-
+```
 There are two ways of using node classification script:
 1) As an import
 OR
@@ -165,7 +165,7 @@ Example for SVM (linear kernel) classification:
 python classification.py --classifier SVM --test_kernel linear --emb ../emb/blogcatalog.emb --network ../blogcatalog.mat --dataset blogcatalog --algorithm walkets --training_percents '[0.1, 0.5]' --embedding_params '{"walk" :10, "p" : 1}' --adj_matrix_name network --label_matrix_name group  --word2vec_format --grid_search
 Example for SVM (rbf kernel) classification:
 python classification.py --classifier SVM --test_kernel rbf --emb ../emb/blogcatalog.emb --network ../blogcatalog.mat --dataset blogcatalog --algorithm walkets --training_percents '[0.1, 0.5]' --embedding_params '{"walk" :10, "p" : 1}' --adj_matrix_name network --label_matrix_name group  --word2vec_format --grid_search
-
+```
 ## Node Classification Heuristics
 
 ## Requirements
