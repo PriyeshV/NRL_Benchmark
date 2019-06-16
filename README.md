@@ -6,7 +6,7 @@ Here is the [link](https://arxiv.org/pdf/1905.00987.pdf) to the paper
 ## Requirements
 environment.yml contains the necessary virtualenv requirements for running all the scripts in the repository. 
 
-## Citing
+## Citation
 If you find our paper or the code relevant and useful for your research, we request you to cite our paper
 ```
 @article{gurukar2019network,
